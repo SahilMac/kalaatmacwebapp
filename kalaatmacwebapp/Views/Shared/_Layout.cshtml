@@ -20,6 +20,7 @@
         <a asp-controller="home" asp-action ="index"><i class="fa fa-fw fa-home"></i> Home</a>
         <a asp-controller="Gallery" asp-action="Index"><i class="fa fa-fw fa-gallery"></i> Gallery</a>
         <a href="/pages/about.html"><i class="fa fa-fw fa-about"></i> About</a>
+        <a href="/pages/contact.html"><i class="fa fa-fw fa-contact"></i> Blog</a>
         <a href="/pages/contact.html"><i class="fa fa-fw fa-contact"></i> Contact Us</a>
     </div>
             @RenderBody()
@@ -34,5 +35,11 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+<script>
+//setInterval(function() {
+//    window.location.href = window.location.href
+//}, 1000);
+
+</script>
 </html>
 
