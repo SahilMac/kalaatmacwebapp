@@ -2,24 +2,23 @@
     ViewData["Title"] = "Home Page";
 }
 
-
 <div class="slideshow-container">
 
     <div id="slide1" class="mySlides">
     <div class="numbertext">1 / 3</div>
-    <img src="/images/artwork.jpg" style="width:100%">
+    <img src="/images/arts1.jpg" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
   <div id="slide2" class="mySlides fade">
     <div class="numbertext">2 / 3</div>
-    <img src="/images/artwork2.jpg" style="width:100%">
+    <img src="/images/arts2.jpg" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
   <div id="slide3" class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <img src="/images/artwork5.jpg" style="width:100%">
+    <img src="/images/arts4.jpg" style="width:100%">
     <div class="text">Caption Three</div>
   </div>
 
@@ -28,6 +27,7 @@
   <a class="next" onclick="plusSlides(1)">&#10095;</a>*@
 
 </div>
+
 <script>
     //1. hide all slide images
     //2. Show 1st and wait 3secs
@@ -39,19 +39,19 @@
 
     function showslides(){
         $(".mySlides").hide();
-        $("#slide1").show("fast");
+        $("#slide1").show();
 
         setTimeout(function () {
             $(".mySlides").hide();
-            $("#slide2").show("fast");
+            $("#slide2").show();
 
             setTimeout(function () {
                 $(".mySlides").hide();
-                $("#slide3").show("fast");
+                $("#slide3").show();
 
-                setTimeout(showslides,3000);
-            },3000);
-        },3000);
+                setTimeout(showslides,2500);
+            },2500);
+        },2500);
 
     }
 
@@ -66,35 +66,37 @@
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
 *@
+<hr />
+
  <section>
     <h1>Welcome to the World of Colours !</h1>
 
-    <p>Welcome to our art website And We are thrilled to share our passion for art with you and provide a platform to showcase our work.
+    <p>Welcome to our art website, where we showcase an exquisite collection of fine art from various talented artists around the world. Our mission is to provide a platform for artists to showcase their creativity and for art enthusiasts to discover and purchase unique pieces that speak to their soul.</p>
+    <p>Whether you're an art collector or just someone who appreciates beauty, our website offers a wide range of styles and mediums to suit your taste. From classical oil paintings to modern digital art, we have something for everyone.</p>
 
-    <p>As an artist, We are inspired by the world around me and seek to capture its beauty through our art. On this website, you will find a collection of our paintings, drawings, and other works that reflect our unique style and perspective.</p>
-
-    <p>We believe that art has the power to move, inspire, and transform people, and We hope that our artwork will do just that for you. Through this website, We also aim to connect with other artists and art enthusiasts, and create a community that shares a love for art.</p>
-
-    <p>Thank you for visiting our website, and We invite you to explore our artwork and share your thoughts and feedback with us.</p>
+    <p>Our website is user-friendly, and you can easily browse our collection and filter your search by artist, style, medium, or price range. We also offer free shipping worldwide and a hassle-free return policy to ensure your satisfaction.</p>
+    <p>We hope you enjoy exploring our website and discovering the beauty of art. Don't hesitate to contact us if you have any questions or would like to learn more about our artists or the artwork.</p>
   </section>
 
+  <hr />
+
   <section>
-    <h2>Featured Artists</h2>
+    <h1>Featured Artists</h1>
     <ul>
       <li>
           <img src="../images/artist1.jpg" alt="Artist 1">
           <h3>Artist 1</h3>
           <p></p>
-        </li>
-        <li>
+      </li>
+      <li>
           <img src="../images/artist2.jpg" alt="Artist 2">
           <h3>Artist 2</h3>
           <p></p>
-        </li>
-        <li>
+      </li>
+      <li>
           <img src="../images/artwork.jpg" alt="Artist 3">
           <h3>Artist 3</h3>
-          <p></p>
-        </li>
+          <p></p> 
+      </li>
     </ul>
   </section>

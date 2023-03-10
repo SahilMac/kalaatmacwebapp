@@ -1,18 +1,19 @@
+/*header----------------------*/
 #kalaatmak {
-    color:antiquewhite;
+    opacity: 0.8;
+    color:darkblue;
     text-align: center;
     font-size: 40px;
     background-image: url("/images/artist1.jpg");
     box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
-.navbar {
+.navbar > a {
     display: inline-block;
     padding: 10px 20px;
-    background-color:dimgrey;
-    color: #fff;
+    background-color:gray;
     text-decoration: none;
-    border-radius: 100px;
+    border-radius: 10px;
 }
 
 .navbar a:hover {
@@ -20,7 +21,7 @@
 }
 
 
-/.active {
+.active {
     background-color:darkcyan;
 }
 
@@ -33,73 +34,21 @@
 }
 
 
-
-/*---contact---*/
-body {
-    font-family: Arial, sans-serif;
+/*home---------all page---------*/
+h1, h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:darkblue;
 }
-
-.abtcontainer {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-}
-
-.social {
-}
-
-.cntcontainer {
-    width: 80%;
-    margin: 0 auto;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-}
-h1 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 95%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    border: 1px solid #ccc;
-}
-
-form textarea {
-    height: 80px;
-}
-
-form input[type="submit"] {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-form input[type="submit"]:hover {
-    background-color: darkgreen;
+p, li, label{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:darkviolet;
 }
 
 
 
 
 
-
-/* Slideshow  */
+/* Slideshow ----------*/
 .slideshow-container {
     max-width: 2000px;
     position: relative;
@@ -109,11 +58,11 @@ form input[type="submit"]:hover {
 /* Hide the images by default */
 .mySlides {
     /*display: none;*/
-    position: absolute;
     width: 100%;
-    max-height: 300px;
+    max-height: 550px;
     overflow: hidden;
 }
+
 .slideshow-container {
     height: 300px;
 }
@@ -182,12 +131,89 @@ form input[type="submit"]:hover {
     }
 
 
-@keyframes fade {
-    from {
-        opacity: .4
+
+/*gallery---------------------*/
+
+
+
+
+/*blog-------------------*/
+
+
+
+
+
+/*---contact------------------*/
+body {
+    font-family: Arial, sans-serif;
+}
+
+.abtcontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+.cntcontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+#social img {
+    height: 40px;
+}
+
+.fbkcontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form textarea {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+}
+
+form textarea {
+    height: 80px;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+    form input[type="submit"]:hover {
+        background-color: darkgreen;
     }
 
-    to {
-        opacity: 1
-    }
-}
+
+
+
+
+
+
