@@ -1,51 +1,32 @@
 #kalaatmak {
-    color: rgb(118, 23, 6);
+    color:antiquewhite;
     text-align: center;
     font-size: 40px;
-    background-image: url("/images/arti.jpg");
-    box-shadow: 10px 5px 10px rgba(0, 0, 0, 0.3);
+    background-image: url("/images/artist1.jpg");
+    box-shadow: 10px 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 a {
     display: inline-block;
     padding: 10px 20px;
-    background-color: #333;
-    color: #fff;
+    background-color: #980909;
+    color: #fbfbf5;
     text-decoration: none;
-    border-radius: 5px;
-}
-
-.slide {
-    background-color: #d8c2c2;
-    color: #000000;
-    width: 500px;
-    height: 300px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    font-family: Arial, sans-serif;
-    font-size: 24px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    border-radius: 10px;
 }
 
 .navbar a {
-    text-align: center;
-    position: relative;
-    margin: 10px;
+    margin:10px;
     padding: 10px;
     font-size: 15px;
 }
 
-    .navbar a:hover {
-        background-color: #1cb57d;
-    }
+.navbar a:hover {
+        background-color: #ce3c0b;
+}
 
 .active {
-    background-color: #1cb57d;
+    background-color: #5c423d;
 }
 
 @media screen and (max-width: 500px) {
@@ -60,18 +41,27 @@ a {
 ---contact---
 body {
     font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
 }
 
-.container {
+.abtcontainer {
     width: 80%;
     margin: 0 auto;
-    background-color: #fff;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
 
+.social {
+    height: 30px;
+}
+
+.cntcontainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
 h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -85,15 +75,15 @@ form label {
 form input[type="text"],
 form input[type="email"],
 form textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     border: 1px solid #ccc;
 }
 
 form textarea {
-    height: 150px;
+    height: 80px;
 }
 
 form input[type="submit"] {
@@ -105,6 +95,94 @@ form input[type="submit"] {
     cursor: pointer;
 }
 
-    form input[type="submit"]:hover {
-        background-color: #3e8e41;
+form input[type="submit"]:hover {
+    background-color: darkgreen;
+}
+
+
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
     }
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+    .active, .dot:hover {
+        background-color: #717171;
+    }
+
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
