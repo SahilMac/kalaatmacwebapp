@@ -1,50 +1,74 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-<<<<<<< HEAD
+
 
 <div class="slideshow-container">
 
-  <div class="mySlides fade">
+    <div id="slide1" class="mySlides">
     <div class="numbertext">1 / 3</div>
     <img src="/images/artwork.jpg" style="width:100%">
     <div class="text">Caption Text</div>
   </div>
 
-  <div class="mySlides fade">
+  <div id="slide2" class="mySlides fade">
     <div class="numbertext">2 / 3</div>
     <img src="/images/artwork2.jpg" style="width:100%">
     <div class="text">Caption Two</div>
   </div>
 
-  <div class="mySlides fade">
+  <div id="slide3" class="mySlides fade">
     <div class="numbertext">3 / 3</div>
-    <i mg src="/images/artwork5.jpg" style="width:100%">
-    <div c  lass="text">Caption Three</div>
+    <img src="/images/artwork5.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
   </div>
 
   <!-- ext and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class  ="next" onclick="plusSlides(1)">&#10095;</a>
+ @* <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>*@
 
 </div>
+<script>
+    //1. hide all slide images
+    //2. Show 1st and wait 3secs
+    //3. Hide all slide images
+    //4. Show 2nd and wait 3secs
+    //5. hide all slide image
+    //6. Show 3rd and wait 3secs
+    //7. repeat from 1
 
+    function showslides(){
+        $(".mySlides").hide();
+        $("#slide1").show("fast");
+
+        setTimeout(function () {
+            $(".mySlides").hide();
+            $("#slide2").show("fast");
+
+            setTimeout(function () {
+                $(".mySlides").hide();
+                $("#slide3").show("fast");
+
+                setTimeout(showslides,3000);
+            },3000);
+        },3000);
+
+    }
+
+    setTimeout(function () { showslides () },1000);
+</script>
 <br />
 
 <!-- The dots/circles -->
-<div style  ="text-align:center">
+@*<div style  ="text-align:center">
   <span cl  ass="dot" onclick="currentSlide(1)"></span>
   <span cl  ass="dot" onclick="currentSlide(2)"></span>
   <span class="dot" onclick="currentSlide(3)"></span>
 </div>
-
+*@
  <section>
     <h1>Welcome to the World of Colours !</h1>
-=======
-<main>
-  <section>
-    <h1>Welcome to the World of Colours  !</h1>
->>>>>>> c9fbdc2b688abd8a543c55ebb13949b3e2e9b9cb
+
     <p>Welcome to our art website And We are thrilled to share our passion for art with you and provide a platform to showcase our work.
 
     <p>As an artist, We are inspired by the world around me and seek to capture its beauty through our art. On this website, you will find a collection of our paintings, drawings, and other works that reflect our unique style and perspective.</p>
