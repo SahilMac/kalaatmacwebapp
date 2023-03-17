@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/pages/kalaatmak.css">
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
@@ -17,33 +18,27 @@
 
 
     <div class="navbar">
-<<<<<<< HEAD
         <a asp-controller="Home" asp-action ="index"><i class="fa fa-fw fa-home"></i> Home</a>
         <a asp-controller="Gallery" asp-action="index"><i class="fa fa-fw fa-snowflake-o"></i> Gallery</a>
         <a asp-controller="Blog" asp-action="index"><i class="fa fa-fw fa-indent"></i> Blog</a>
         <a asp-controller="Contact" asp-action="index"><i class="fa fa-fw fa-user-circle-o"></i> About Us</a>
     </div
 
-=======
-        <a asp-controller="home" asp-action ="index"><i class="fa fa-fw fa-home"></i> Home</a>
-        <a asp-controller="Gallery" asp-action="Index"><i class="fa fa-fw fa-gallery"></i> Gallery</a>
-        <a href="/pages/about.html"><i class="fa fa-fw fa-about"></i> About</a>
-        <a href="/pages/contact.html"><i class="fa fa-fw fa-contact"></i> Blog</a>
-        <a href="/pages/contact.html"><i class="fa fa-fw fa-contact"></i> Contact Us</a>
-    </div>
->>>>>>> 5f323dc675fa7101d736627c7c324b67f83cf094
             @RenderBody()
+</body>
 
-    <footer>
-        <p>&copy; 2023 Art Website. All rights reserved.</p>
-    </footer>
+<footer>
+    <p>&copy; 2023 Art Website. All rights reserved.</p>
+</footer>
 
-    <script src="kalaatmak.js"></script>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
-</body>
+
+
+
 <script>
 //setInterval(function() {
 //    window.location.href = window.location.href
